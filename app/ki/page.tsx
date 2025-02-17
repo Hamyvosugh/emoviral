@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Brain, MessageSquare, Search, BarChart3, Bot, Shield, Cpu, Database, Code, ArrowRight, ChevronRight, FlaskConical, Users, Factory } from 'lucide-react';
+import { Brain, MessageSquare, Search, ArrowRight, ChevronRight, FlaskConical, Users, Factory } from 'lucide-react';
 import Header from '@/components/header/header';
 import Footer from '@/components/footer/footer';
 
