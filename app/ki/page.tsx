@@ -1,8 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Brain, MessageSquare, Search, ArrowRight, ChevronRight, FlaskConical, Users, Factory } from 'lucide-react';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
 
 const KIIntegration = () => {
   const [activeSection, setActiveSection] = useState(0);
@@ -93,7 +91,7 @@ const KIIntegration = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+
       <main className="flex-grow bg-gray-900 text-white relative">
         <div 
           className="absolute inset-0 bg-gray-900" 
@@ -194,7 +192,6 @@ const KIIntegration = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

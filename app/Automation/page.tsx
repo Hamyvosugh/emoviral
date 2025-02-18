@@ -2,8 +2,6 @@
 import React from 'react';
 import { Zap, Clock, TrendingUp, Bot, Cpu, ShipIcon, Building2, Sparkles, Phone, MessageCircle, Mail } from 'lucide-react';
 import Link from 'next/link';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
 
 const AutomationPage = () => {
   const benefits = [
@@ -43,8 +41,7 @@ const AutomationPage = () => {
   ];
 
   return (
-    <>
-        <Header />
+
     <div className="min-h-screen bg-gray-950 text-white">
       {/* Hero Section */}
        
@@ -158,8 +155,7 @@ const AutomationPage = () => {
         </div>
       </section>
     </div>
-    <Footer />
-    </>
+
   );
 };
 

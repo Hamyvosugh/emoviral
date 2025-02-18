@@ -6,7 +6,6 @@ import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { Clock, Tag, TrendingUp, Search, Filter } from 'lucide-react';
 import StyledMetadata from '@/components/blog/StyledMetadata';
-import Header from '@/components/header/header';  // Add this line
 
 async function FeaturedPosts() {
   const featuredPosts = await getFeaturedPosts();

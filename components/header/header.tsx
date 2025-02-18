@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { Menu, X, Search, Code, Rocket, BarChart, Brain, ChevronDown } from 'lucide-react';
 import Link from 'next/link';

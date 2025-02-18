@@ -1,11 +1,9 @@
 'use client';
 // app/danke/page.tsx
-import Layout from '@/components/Layout/Layout';
 import { Mail } from 'lucide-react';
 
 export default function ThankYouPage() {
   return (
-    <Layout>
       <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 dark">
         <div className="container flex flex-col items-center justify-center px-4 py-16 mx-auto min-h-[80vh]">
           <div className="relative w-full max-w-2xl p-8 overflow-hidden text-center">
@@ -71,6 +69,5 @@ export default function ThankYouPage() {
           </div>
         </div>
       </main>
-    </Layout>
   );
 }

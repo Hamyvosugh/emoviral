@@ -2,12 +2,11 @@
 import React from 'react';
 import { Phone, MapPin, Mail, MessageCircle } from 'lucide-react';
 import Form from '@/components/Form/jobform';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
+
 
 const ContactPage = () => {
   return (
-    <><Header />
+
     <div className="min-h-screen bg-gray-950 text-gray-100 mt-16">
       {/* Hero Section */}
       <div className="container py-16">
@@ -106,9 +105,9 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
+
     </div>
-    </>
+
   );
 };
 

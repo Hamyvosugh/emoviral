@@ -1,8 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Code, Smartphone, Palette, Building2, Wrench, Globe2, TestTube2, Laptop, LineChart, Cpu, ArrowRight, ChevronRight } from 'lucide-react';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
+
 
 const Webentwicklung = () => {
   const [activeSection, setActiveSection] = useState(0);
@@ -42,7 +41,7 @@ const Webentwicklung = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+
       <main className="flex-grow bg-gray-900 text-white relative">
         {/* Dynamischer Hintergrund */}
         <div 
@@ -144,7 +143,6 @@ const Webentwicklung = () => {
         </div>
       </div>
       </main>
-      <Footer />
     </div>
   );
 };

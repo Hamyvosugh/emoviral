@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { ArrowRight, Smartphone, Globe2, BarChart3, MessageSquare, PenTool, Search } from 'lucide-react';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
 
 interface ServiceCardProps {
   title: string;
@@ -59,8 +57,7 @@ export default function DigitalMarketingPage() {
   ];
 
   return (
-    <>
-    <Header />
+
     <div className="min-h-screen bg-secondary-950 ">
     
       {/* Hero Section */}
@@ -125,8 +122,8 @@ export default function DigitalMarketingPage() {
           </div>
         </div>
       </section>
-      <Footer />
+
     </div>
-    </>
+
   );
 }
