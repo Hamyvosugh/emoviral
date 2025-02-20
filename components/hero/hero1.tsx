@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import Slider from './slider';
+import { IconOne, IconTwo, IconThree } from './icons';
  
 
 interface StatType {
@@ -10,9 +11,9 @@ interface StatType {
 }
 
 const stats: StatType[] = [
-  { value: '500+', label: 'Zufriedene Kunden' },
-  { value: '95%', label: 'Kundenzufriedenheit' },
-  { value: '10+', label: 'Jahre Erfahrung' },
+  { value: '2024', label: 'Unser Startup' },
+  { value: '100%', label: 'Kundenzufriedenheit' },
+  { value: '10+', label: ' Projekte' },
 ];
 
 const MarketingHero = () => {
@@ -32,8 +33,7 @@ const MarketingHero = () => {
                 Digitale Lösungen für Ihren Erfolg
               </h1>
               <p className="text-lg text-gray-600">
-                Transformieren Sie Ihre digitale Präsenz mit unseren maßgeschneiderten Marketing-Strategien. Wir helfen Ihnen, Ihre Zielgruppe zu erreichen und Ihre Geschäftsziele zu übertreffen.
-              </p>
+              Transformieren Sie Ihre digitale Präsenz mit unseren maßgeschneiderten Marketing-Strategien. Wir sind ein kreatives Team, das erst kürzlich gestartet ist, aber wir bringen das neueste Wissen und höchste Kreativität mit, um Ihnen zu helfen, Ihre Zielgruppe effektiv zu erreichen und Ihre Geschäftsziele zu übertreffen.              </p>
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
@@ -64,7 +64,7 @@ const MarketingHero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8">
+            <div className="grid grid-cols-3 gap-8 pt-8 ">
               {stats.map((stat, index) => (
                 <div key={index} className="space-y-2">
                   <p className="font-display text-3xl font-bold text-primary-600">{stat.value}</p>
