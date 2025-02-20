@@ -17,13 +17,13 @@ const CtaSection = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative h-full container mx-auto px-4 flex items-center justify-between z-10">
+      <div className="relative h-full container mx-auto px-4 flex items-center   z-10">
         {/* Left space for image object visibility */}
         <div className="w-1/4" />
 
         {/* Center Content */}
-        <div className="w-1/2 text-center space-y-6">
-          <h2 className="text-4xl font-display font-bold text-white">
+        <div className="w-1/2 text-center space-y-6 ">
+          <h2 className="text-4xl font-display font-bold text-white  " >
             Lassen Sie uns Ihr Projekt gemeinsam starten
           </h2>
           <p className="text-lg text-primary-100">

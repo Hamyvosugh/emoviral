@@ -2,7 +2,6 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import Slider from './slider';
-import { IconOne, IconTwo, IconThree } from './icons';
  
 
 interface StatType {
