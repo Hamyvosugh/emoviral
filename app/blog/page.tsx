@@ -11,9 +11,9 @@ export default async function BlogPage() {
   const tags = await getAllTags();
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black  ">
       {/* Hero Section */}
-      <div className="relative h-[85vh] -mt-24">
+      <div className="relative h-[65vh] mt-20 ">
         {featuredPosts[0] && (
           <>
             <div className="absolute inset-0 bg-black/60 z-10" />
@@ -25,7 +25,7 @@ export default async function BlogPage() {
               priority
             />
             <div className="absolute bottom-1/4 left-16 z-20 max-w-2xl">
-              <h1 className="text-6xl font-bold text-white mb-4">{featuredPosts[0].title}</h1>
+              <h1 className="text-5xl font-bold text-white mb-5">{featuredPosts[0].title}</h1>
               <p className="text-lg text-gray-200 mb-8">{featuredPosts[0].description}</p>
               <div className="flex gap-4">
                 <Link
@@ -33,11 +33,11 @@ export default async function BlogPage() {
                   className="flex items-center gap-2 px-8 py-3 bg-white text-black font-semibold rounded hover:bg-white/90 transition"
                 >
                   <Play size={24} className="fill-black" />
-                  Read Now
+                  Mehr lesen
                 </Link>
                 <button className="flex items-center gap-2 px-8 py-3 bg-gray-500/50 text-white font-semibold rounded hover:bg-gray-500/70 transition">
                   <Info size={24} />
-                  More Info
+                  Mehr Info
                 </button>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default async function BlogPage() {
       </div>
 
       {/* Content Rows */}
-      <div className="-mt-32 relative z-10 pb-16">
+      <div className="-mt-32 relative z-10 pb-16 pt-9">
         {/* Featured Row */}
         <Suspense fallback={<div className="h-64 bg-black/50" />}>
           <BlogList 

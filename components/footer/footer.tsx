@@ -84,15 +84,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors duration-300 group cursor-pointer">
                 <MapPin size={18} className="group-hover:text-blue-400 transition-colors duration-300" />
-                <span>123 Geschäftsstraße, Suite 100, Stadt, ST 12345</span>
+                <span>Mühlstrasse 11, 65597 Hünfelden, Hessen</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors duration-300 group cursor-pointer">
                 <Phone size={18} className="group-hover:text-blue-400 transition-colors duration-300" />
-                <span>+49 (555) 123-4567</span>
+                <span>+49 (176) 47 666 407</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-blue-400 transition-colors duration-300 group cursor-pointer">
                 <Mail size={18} className="group-hover:text-blue-400 transition-colors duration-300" />
-                <span>kontakt@firma.de</span>
+                <span>hi@emoviral.com</span>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="text-gray-400">
-              <p>© {currentYear} Ihre Firma. Alle Rechte vorbehalten.</p>
+              <p>© {currentYear} Emoviral. Alle Rechte vorbehalten.</p>
             </div>
           </div>
 

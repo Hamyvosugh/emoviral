@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { Clock, Tag, Share2, BookmarkPlus } from 'lucide-react';
+import BlogCTA from '../../components/blog/calltoaction';
 
 interface BlogPostPageProps {
   params: {
@@ -130,7 +131,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
         </div>
+        <BlogCTA 
+  title={post.title}
+  coverImage={post.coverImage || ''}
+/>
       </main>
+      
     </div>
   );
 }

@@ -5,7 +5,7 @@ export interface BlogPost {
   title: string;
   description: string;
   content: string;
-  excerpt: string;  // Added this to match your existing interface
+  excerpt: string;  
   readingTime: string;
   author: {
     name: string;

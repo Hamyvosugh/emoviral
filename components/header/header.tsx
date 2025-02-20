@@ -4,6 +4,7 @@ import { Menu, X, Search, Code, Rocket, BarChart, Brain, ChevronDown } from 'luc
 import Link from 'next/link';
 import SearchOverlay from '@/components/header/SearchOverlay';
 
+
 interface NavItem {
   label: string;
   href: string;
@@ -126,12 +127,13 @@ const Header = () => {
 
           {/* Right side actions */}
           <div className="flex items-center space-x-4">
+          <Link href="/beratung">
             <button 
               className="hidden md:flex items-center px-4 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-500 rounded-xl transition-colors duration-200"
             >
               Kostenlose Beratung
             </button>
-            
+            </Link>
             <button 
               className="p-2 text-gray-400 hover:text-primary-400 rounded-xl transition-colors duration-200 bg-gray-900"
               onClick={toggleSearch}
