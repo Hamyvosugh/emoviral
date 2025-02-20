@@ -32,7 +32,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Hero Section */}
         <div className="animate-fade-in mb-12">
           {post.coverImage && (
-            <div className="relative h-96 w-full rounded-2xl overflow-hidden mb-8">
+            <div className="relative h-96 w-full rounded-2xl overflow-hidden mb-8 mt-14">
               <Image
                 src={post.coverImage}
                 alt={post.title}
