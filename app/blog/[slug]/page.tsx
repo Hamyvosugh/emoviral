@@ -23,16 +23,16 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
+  // Make sure we have an absolute URL for the image
+  const imageUrl = post.coverImage 
+    ? new URL(post.coverImage, 'https://emoviral.vercel.app').toString()
+    : new URL('/images/default-og.jpg', 'https://emoviral.vercel.app').toString();
+
   return {
-    // Use SEO title if available, fallback to post title
     title: post.seo?.title || post.title,
-    // Use SEO description if available, fallback to post description
     description: post.seo?.description || post.description,
     keywords: post.seo?.keywords,
-    authors: [{ 
-      name: post.author.name,
-      url: post.author.bio // Include bio URL if you want to link to author page
-    }],
+    authors: [{ name: post.author.name }],
     openGraph: {
       title: post.seo?.title || post.title,
       description: post.seo?.description || post.description,
@@ -42,10 +42,11 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       authors: [post.author.name],
       images: [
         {
-          url: post.seo?.ogImage || post.coverImage || '',
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: post.title,
+          type: 'image/jpeg', // or 'image/png' depending on your image type
         }
       ],
       tags: post.tags,
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       card: 'summary_large_image',
       title: post.seo?.title || post.title,
       description: post.seo?.description || post.description,
-      images: [post.seo?.ogImage || post.coverImage || ''],
+      images: [imageUrl],
     }
   };
 }
