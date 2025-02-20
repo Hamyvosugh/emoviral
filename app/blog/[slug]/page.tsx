@@ -5,10 +5,57 @@ import { format } from 'date-fns';
 import { de } from 'date-fns/locale';
 import { Clock, Tag, Share2, BookmarkPlus } from 'lucide-react';
 import BlogCTA from '../../components/blog/calltoaction';
+import { Metadata } from 'next'
 
 interface BlogPostPageProps {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const post = await getPostBySlug(params.slug);
+  
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+      description: 'The requested blog post could not be found'
+    };
+  }
+
+  return {
+    // Use SEO title if available, fallback to post title
+    title: post.seo?.title || post.title,
+    // Use SEO description if available, fallback to post description
+    description: post.seo?.description || post.description,
+    keywords: post.seo?.keywords,
+    authors: [{ 
+      name: post.author.name,
+      url: post.author.bio // Include bio URL if you want to link to author page
+    }],
+    openGraph: {
+      title: post.seo?.title || post.title,
+      description: post.seo?.description || post.description,
+      type: 'article',
+      publishedTime: post.publishedAt.toISOString(),
+      modifiedTime: post.updatedAt?.toISOString(),
+      authors: [post.author.name],
+      images: [
+        {
+          url: post.seo?.ogImage || post.coverImage || '',
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ],
+      tags: post.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.seo?.title || post.title,
+      description: post.seo?.description || post.description,
+      images: [post.seo?.ogImage || post.coverImage || ''],
+    }
   };
 }
 
