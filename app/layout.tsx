@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import 'highlight.js/styles/github-dark.css'; // or any other style you prefer
-import BackToTop from '@/components/sides/backtotop'; 
+import 'highlight.js/styles/github-dark.css';
+import BackToTop from '@/components/sides/backtotop';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
@@ -17,23 +17,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://emoviral.vercel.app"),
   title: {
     default: "Emoviral",
     template: "%s | Emoviral",
   },
-  description: "Your blog description for SEO",
+  description: "Web/App Entwicklung, Automatisierung, Ki, Digitales Merketing",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourdomain.com",
+    url: "https://emoviral.vercel.app",
     siteName: "Emoviral",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Emoviral",
+        url: "/images/logos/emoviral-logo-s.webp",
+        width: 800,  // Adjust based on your actual image dimensions
+        height: 600, // Adjust based on your actual image dimensions
+        alt: "Emoviral Logo",
       },
     ],
   },
@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@yourusername",
     creator: "@yourusername",
+    images: ["/images/logos/emoviral-logo-s.webp"],
   },
   robots: {
     index: true,
@@ -51,6 +52,10 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
     },
   },
+  icons: {
+    icon: "/images/logos/emoviral-logo-s.webp",
+    shortcut: "/images/logos/emoviral-logo-s.webp",
+  }
 };
 
 export default function RootLayout({
@@ -60,16 +65,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`} overflow-x-hidden="true"
+      <body 
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ overflowX: 'hidden' }}
       >
         <Header />
         {children}
         <BackToTop />
         <Footer />
       </body>
-      
     </html>
   );
 }
