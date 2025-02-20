@@ -9,11 +9,6 @@ interface StatType {
   label: string;
 }
 
-const stats: StatType[] = [
-  { value: '2024', label: 'Unser Startup' },
-  { value: '100%', label: 'Kundenzufriedenheit' },
-  { value: '10+', label: ' Projekte' },
-];
 
 const MarketingHero = () => {
   return (
@@ -62,15 +57,6 @@ const MarketingHero = () => {
               </button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 ">
-              {stats.map((stat, index) => (
-                <div key={index} className="space-y-2">
-                  <p className="font-display text-3xl font-bold text-primary-600">{stat.value}</p>
-                  <p className="text-sm text-gray-600">{stat.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right Column - Slider */}
