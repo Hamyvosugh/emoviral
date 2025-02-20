@@ -19,21 +19,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://yourdomain.com"),
   title: {
-    default: "Your Blog Name",
-    template: "%s | Your Blog Name",
+    default: "Emoviral",
+    template: "%s | Emoviral",
   },
   description: "Your blog description for SEO",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourdomain.com",
-    siteName: "Your Blog Name",
+    siteName: "Emoviral",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Your Blog Name",
+        alt: "Emoviral",
       },
     ],
   },

@@ -2,7 +2,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import Slider from './slider';
- 
+import MotionBanner from './banner'
 
 interface StatType {
   value: string;
@@ -64,7 +64,7 @@ const MarketingHero = () => {
             <div className="absolute -right-20 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-gradient-radial from-primary-200/50 to-transparent blur-3xl" />
             <div className="absolute -left-20 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-gradient-radial from-secondary-200/50 to-transparent blur-3xl" />
             <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
-              <Slider />
+            <MotionBanner />
             </div>
           </div>
         </div>
