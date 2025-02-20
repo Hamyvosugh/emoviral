@@ -9,7 +9,7 @@ const metadata = {
 
 const StyledMetadata = () => {
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-8 mb-12 shadow-xl relative">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-8 mb-12 shadow-xl relative mt-12">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-start gap-6">
           <div className="bg-primary-500/10 p-3 rounded-lg">

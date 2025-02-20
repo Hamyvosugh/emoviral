@@ -10,7 +10,7 @@ export default function BlogPostComponent({ post }: BlogPostProps) {
       <header className="mb-8">
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         <div className="flex items-center text-gray-600">
-          <span>{post.author}</span>
+          <span>{post.author.name}</span>
           <span className="mx-2">•</span>
           <time>{new Date(post.publishedAt).toLocaleDateString()}</time>
           {post.updatedAt && (

@@ -15,7 +15,7 @@ const HomeMain = () => {
       <Service />
       <Process />
       <CalltoAction />
-      <Title title="Verbinden Sie sich mit uns" subtitle="Nutzen Sie das folgende Formular, um direkten Kontakt aufzunehmen. Ihr Anliegen ist uns wichtig – wir antworten prompt und präzise!" /> 
+      <Title title="Kontaktieren Sie uns" subtitle="" /> 
       <Form />
       
     </div>

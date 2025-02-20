@@ -1,12 +1,27 @@
 export interface BlogPost {
-  coverImage: any;
+  date: string | number | Date;
   id: string;
-  title: string;
   slug: string;
+  title: string;
+  description: string;
   content: string;
-  excerpt: string;
-  author: string;
+  excerpt: string;  // Added this to match your existing interface
+  readingTime: string;
+  author: {
+    name: string;
+    image: string;
+    bio?: string;
+  };
   publishedAt: Date;
   updatedAt?: Date;
   tags: string[];
+  coverImage?: string;
+  featured?: boolean;
+  draft?: boolean;
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string[];
+    ogImage?: string;
+  };
 }

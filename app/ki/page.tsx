@@ -105,9 +105,9 @@ const KIIntegration = () => {
           <div className="container pt-32 pb-20">
             <div className="max-w-4xl mx-auto text-center relative">
               <div className="absolute inset-0 blur-3xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 animate-pulse" />
-              <h1 className="font-display text-7xl font-bold mb-6 relative bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text animate-fade-in">
-                KI-Integration für Unternehmen
-              </h1>
+              <h1 className="font-display text-5xl sm:text-7xl font-bold mb-6 relative bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text animate-fade-in">
+    KI-Integration für Unternehmen
+</h1>
               <p className="text-2xl text-gray-300 mb-12 animate-fade-in delay-100">
                 Transformieren Sie Ihr Unternehmen mit zukunftsweisenden KI-Lösungen
               </p>

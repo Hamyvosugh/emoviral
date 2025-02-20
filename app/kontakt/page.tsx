@@ -48,9 +48,9 @@ const ContactPage = () => {
                     />
                     <a 
                       href="tel:+4917647666407"
-                      className="text-primary-400 hover:text-primary-300 transition-colors"
+                      className="text-primary-400 hover:text-primary-300 transition-colors absolute bottom-1 right-5"
                     >
-                      +49 176 4766 6407
+                      +49 176 47 666 407
                     </a>
                   </div>
                 </div>
@@ -74,11 +74,11 @@ const ContactPage = () => {
                     />
                     <a 
                       href="https://wa.me/4917647666407"
-                      className="text-success-400 hover:text-success-300 transition-colors"
+                      className="text-success-400 hover:text-success-300 transition-colors absolute bottom-1 right-5"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      +49 176 4766 6407
+                      +49 176 47 666 407
                     </a>
                   </div>
                 </div>

@@ -105,9 +105,7 @@ const ProcessTimeline = () => {
             <h2 className="text-5xl font-bold text-indigo-900 mb-6 mt-9">
               Unser Prozess
             </h2>
-            <p className="text-xl text-indigo-600 max-w-3xl mx-auto">
-              Von der ersten Idee bis zur erfolgreichen Umsetzung begleiten wir Sie mit unserem bewährten Prozess
-            </p>
+
           </div>
         </div>
       </div>

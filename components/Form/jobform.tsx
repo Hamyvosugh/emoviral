@@ -83,7 +83,7 @@ const KontaktFormular = () => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-4" id="kontakt">
+    <div className="w-full max-w-2xl mx-auto p-1" id="kontakt">
       <div className="bg-white shadow-lg rounded-lg">
         <div className="p-6">
           <div className="mb-6">

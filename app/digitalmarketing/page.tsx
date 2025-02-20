@@ -67,7 +67,7 @@ export default function DigitalMarketingPage() {
         </div>
         
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="animate-fade-in font-display text-5xl font-bold text-white sm:text-6xl lg:text-7xl pt-12">
+          <h1 className="animate-fade-in font-display text-4xl font-bold text-white sm:text-6xl lg:text-7xl pt-12 mt-20">
             Transformieren Sie Ihre Digitale Präsenz
           </h1>
           <p className="mt-6 animate-fade-in text-lg text-secondary-200 [animation-delay:200ms]">

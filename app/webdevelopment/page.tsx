@@ -125,9 +125,9 @@ const Webentwicklung = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600" />
           <div className="absolute inset-0 bg-[linear-gradient(40deg,transparent_25%,rgba(68,51,238,0.2)_50%,transparent_75%)] bg-[length:500px_500px] animate-slide-in opacity-50" />
           <div className="relative p-12 md:p-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-2xl">
-              Bereit, etwas Außergewöhnliches zu erschaffen?
-            </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-full md:max-w-3xl lg:max-w-4xl">
+    Bereit, etwas Außergewöhnliches zu erschaffen?
+</h2>
             <p className="text-xl text-white/80 mb-16 max-w-2xl">
               Lassen Sie uns digitale Erlebnisse schaffen, die die Grenzen des Möglichen erweitern
             </p>

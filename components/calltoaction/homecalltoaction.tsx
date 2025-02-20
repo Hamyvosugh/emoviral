@@ -54,8 +54,8 @@ const CtaSection = () => {
         </div>
 
         {/* Right Side Contact Icons */}
-        <div className="w-1/4 flex flex-col items-end space-y-4">
-          <a
+        <div className="w-1/4 flex flex-col items-center space-y-4 sm:items-end absolute inset-x-0 bottom-0 mx-auto sm:relative sm:mx-0">
+        <a
             href={`tel:${phoneNumber}`}
             className="flex items-center px-4 py-2 bg-white/10 hover:bg-white/20 
                      rounded-full backdrop-blur-sm transition-all duration-300
@@ -64,7 +64,7 @@ const CtaSection = () => {
             <Phone className="w-5 h-5 mr-2" />
             <span className="font-medium">Anrufen</span>
           </a>
-          
+
           <a
             href={`https://wa.me/${phoneNumber}`}
             target="_blank"

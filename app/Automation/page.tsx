@@ -89,7 +89,7 @@ const AutomationPage = () => {
       {/* Solutions Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">
+        <h2 className="text-3xl text-center md:text-4xl font-display font-bold mb-8">
             Unsere Automatisierungslösungen
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,7 +127,7 @@ const AutomationPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             <a 
-              href="tel:+491234567890" 
+              href="tel:+4917647666407" 
               className="flex items-center justify-center gap-3 p-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition-colors duration-300"
             >
               <Phone className="w-6 h-6" />
@@ -135,7 +135,7 @@ const AutomationPage = () => {
             </a>
             
             <a 
-              href="https://wa.me/491234567890" 
+              href="https://wa.me/4917647666407" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center justify-center gap-3 p-4 rounded-xl bg-green-600 hover:bg-green-500 transition-colors duration-300"

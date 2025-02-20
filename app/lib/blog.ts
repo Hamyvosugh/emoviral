@@ -20,6 +20,7 @@ export interface BlogPost {
   title: string;
   description: string;
   content: string;
+  excerpt: string;
   readingTime: string;
   author: {
     name: string;
@@ -112,6 +113,7 @@ export const getPostBySlug = cache(async (slug: string): Promise<BlogPost | null
       title: data.title,
       description: data.description || content.slice(0, 160) + '...',
       content: htmlContent,
+      excerpt: content.slice(0, 160) + '...',
       date: data.date,
       readingTime: calculateReadingTime(content),
       author: {
