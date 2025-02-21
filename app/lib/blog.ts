@@ -14,6 +14,8 @@ import { cache } from 'react';
 import { promises as fs } from 'node:fs';
 
 export interface BlogPost {
+  imageTitle: string;
+  imageAlt: string;
   date: string | number | Date;
   id: string;
   slug: string;

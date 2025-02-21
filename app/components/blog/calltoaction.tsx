@@ -5,6 +5,8 @@ import { Phone, MessageSquare } from 'lucide-react';
 interface BlogCTAProps {
   title: string;
   coverImage: string;
+  imageAlt?: string;  // Added this
+  imageTitle?: string; // Added this
 }
 
 const BlogCTA: React.FC<BlogCTAProps> = ({ title, coverImage }) => {

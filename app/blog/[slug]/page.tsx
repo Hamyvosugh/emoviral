@@ -23,7 +23,6 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
-  // Make sure we have an absolute URL for the image
   const imageUrl = post.coverImage 
     ? new URL(post.coverImage, 'https://emoviral.vercel.app').toString()
     : new URL('/images/default-og.jpg', 'https://emoviral.vercel.app').toString();
@@ -45,8 +44,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: post.title,
-          type: 'image/jpeg', // or 'image/png' depending on your image type
+          alt: post.imageAlt || post.title,  // Updated here
+          type: 'image/jpeg',
         }
       ],
       tags: post.tags,
@@ -79,21 +78,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="animate-fade-in mb-12">
-          {post.coverImage && (
-            <div className="relative h-96 w-full rounded-2xl overflow-hidden mb-8 mt-14">
-  <div className="absolute inset-0 overflow-auto">
-    <div className="relative h-[200%]"> {/* Adjust height as needed */}
-      <Image
-        src={post.coverImage}
-        alt={post.title}
-        fill
-        className="object-cover sticky top-0"
-        priority
-      />
+        {post.coverImage && (
+  <div className="relative h-96 w-full rounded-2xl overflow-hidden mb-8 mt-14">
+    <div className="absolute inset-0 overflow-auto">
+      <div className="relative h-[200%]">
+        <Image
+          src={post.coverImage}
+          alt={post.imageAlt || post.title}
+          title={post.imageTitle || post.title}
+          fill
+          className="object-cover sticky top-0"
+          priority
+        />
+      </div>
     </div>
   </div>
-</div>
-          )}
+)}
+         
           
           {/* Title and Meta Section */}
           <div className="max-w-3xl mx-auto">
@@ -111,14 +112,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             
             <div className="flex items-center justify-between border-y border-gray-200 dark:border-gray-700 py-4 mb-8">
               <div className="flex items-center gap-4">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                  <Image
-                    src={post.author.image}
-                    alt={post.author.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+              <div className="relative w-12 h-12 rounded-full overflow-hidden">
+  <Image
+    src={post.author.image}
+    alt={`Profile picture of ${post.author.name}`}
+    title={post.author.name}
+    fill
+    className="object-cover"
+  />
+</div>
                 <div>
                   <p className="font-medium text-gray-900 dark:text-white">
                     {post.author.name}
@@ -183,6 +185,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <BlogCTA 
   title={post.title}
   coverImage={post.coverImage || ''}
+  imageAlt={post.imageAlt || post.title}
+  imageTitle={post.imageTitle || post.title}
 />
       </main>
       

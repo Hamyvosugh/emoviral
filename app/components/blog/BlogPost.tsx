@@ -1,4 +1,5 @@
 import { BlogPost } from '../../types/blog';
+import Image from 'next/image';
 
 interface BlogPostProps {
   post: BlogPost;
@@ -8,8 +9,30 @@ export default function BlogPostComponent({ post }: BlogPostProps) {
   return (
     <article className="max-w-3xl mx-auto">
       <header className="mb-8">
+        {post.coverImage && (
+          <div className="relative h-96 w-full mb-6">
+            <Image
+              src={post.coverImage}
+              alt={post.imageAlt || post.title}
+              title={post.imageTitle || post.title}
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
+          </div>
+        )}
         <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
         <div className="flex items-center text-gray-600">
+          {post.author.image && (
+            <div className="relative w-10 h-10 mr-3">
+              <Image
+                src={post.author.image}
+                alt={`Profile of ${post.author.name}`}
+                fill
+                className="object-cover rounded-full"
+              />
+            </div>
+          )}
           <span>{post.author.name}</span>
           <span className="mx-2">•</span>
           <time>{new Date(post.publishedAt).toLocaleDateString()}</time>

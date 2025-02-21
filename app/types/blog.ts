@@ -16,6 +16,8 @@ export interface BlogPost {
   updatedAt?: Date;
   tags: string[];
   coverImage?: string;
+  imageAlt?: string;
+  imageTitle?: string;
   featured?: boolean;
   draft?: boolean;
   seo?: {
@@ -24,4 +26,4 @@ export interface BlogPost {
     keywords?: string[];
     ogImage?: string;
   };
-}
+ }

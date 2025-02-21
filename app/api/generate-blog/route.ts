@@ -38,6 +38,8 @@ tags:
   - {Relevanter Tag 3}
   - {new Date().toLocaleString('de-DE', { month: 'long' })}
 coverImage: /images/blog/feb/emoviral.webp
+imageAlt: {Aussagekräftige Beschreibung des Titelbildes für SEO und Barrierefreiheit}
+imageTitle: {Kurzer, prägnanter Titel für das Titelbild beim Hover}
 featured: true
 draft: false
 seo:
