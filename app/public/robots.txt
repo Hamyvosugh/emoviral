@@ -1,17 +1,28 @@
+# robots.txt
+# Block ALL search engines and crawlers
 User-agent: *
-Allow: /
-
-# Allow all crawlers
-Sitemap: https://emoviral.com/sitemap.xml
-
-# Block specific paths
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-
-# Block specific bots (optional)
-User-agent: BadBot
 Disallow: /
 
-# Crawl delay (optional)
-Crawl-delay: 10
+# Explicitly block major search engines for extra certainty
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# No crawl delay needed since we're blocking everything
+# No sitemap needed since we're blocking everything
+
+# This file tells all search engines not to index or crawl any page on this website

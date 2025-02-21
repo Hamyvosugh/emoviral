@@ -107,10 +107,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </span>
               ))}
             </div>
-            
-            <h1 className="font-display text-4xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              {post.title}
-            </h1>
+
             
             <div className="flex items-center justify-between border-y border-gray-200 dark:border-gray-700 py-4 mb-8">
               <div className="flex items-center gap-4">

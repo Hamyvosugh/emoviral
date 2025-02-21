@@ -83,9 +83,9 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <h1 className="font-display text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
+              <h6 className="font-display text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
                 EmoViral
-              </h1>
+              </h6>
             </Link>
           </div>
 
