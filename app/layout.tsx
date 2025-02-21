@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://emoviral.vercel.app"),
+  metadataBase: new URL("https://emoviral.com"),
   title: {
     default: "Emoviral",
     template: "%s | Emoviral",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://emoviral.vercel.app",
+    url: "https://emoviral.com",
     siteName: "Emoviral",
     images: [
       {
