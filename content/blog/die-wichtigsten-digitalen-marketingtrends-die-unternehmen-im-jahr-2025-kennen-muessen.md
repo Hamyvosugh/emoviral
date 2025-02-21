@@ -22,7 +22,7 @@ seo:
     - digitales Marketing 2025
     - KI im Marketing
     - Kundenengagement Strategien
-  ogImage: /images/blog/base/emoviral.webp
+  ogImage: /images/blog/feb/marketing-trends.jpg
 ---
 
 # Die wichtigsten digitalen Marketingtrends, die Unternehmen im Jahr 2025 kennen müssen

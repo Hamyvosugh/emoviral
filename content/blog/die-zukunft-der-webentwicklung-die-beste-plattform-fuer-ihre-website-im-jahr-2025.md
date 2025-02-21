@@ -22,7 +22,7 @@ seo:
     - Beste Website-Plattform 2025
     - Webentwicklung Trends
     - Digitale Transformation
-  ogImage: /images/blog/base/emoviral.webp
+  ogImage: /images/blog/feb/emoviral-webentwicklung.jpg
 ---
 
 # Die Zukunft der Webentwicklung: Die beste Plattform für Ihre Website im Jahr 2025

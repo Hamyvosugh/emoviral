@@ -27,7 +27,7 @@ seo:
         - WordPress
         - Shopify
         - Webentwicklung 2025
-    ogImage: /images/posts/og-image.jpg
+    ogImage: /images/home/marketing-dashboard.JPG
 ---
 
 ## Einführung

@@ -22,7 +22,7 @@ seo:
     - E-Commerce Deutschland
     - Online Handel Trends
     - Digitale Kundenerfahrung
-  ogImage: /images/blog/default.png
+  ogImage: /images/blog/feb/ecommerce.jpg
 ---
 
 # E-Commerce Trends Im Deutschland

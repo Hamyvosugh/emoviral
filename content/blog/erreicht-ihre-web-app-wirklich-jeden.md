@@ -22,7 +22,7 @@ seo:
     - digitale Zugänglichkeit
     - Benutzererfahrung
     - Webentwicklung
-  ogImage: /images/blog/base/emoviral.webp
+  ogImage: /images/blog/feb/1.jpg
 ---
 
 # Erreicht Ihre Web-App wirklich jeden?

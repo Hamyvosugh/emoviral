@@ -22,7 +22,7 @@ seo:
     - Digitale Transformation
     - Unternehmenserfolg
     - Technologische Innovation
-  ogImage: /images/blog/base/emoviral.webp
+  ogImage: /images/blog/feb/emoviral-digital-transorm.jpg
 ---
 
 # Digitale Transformation: Ein Wendepunkt für moderne Unternehmen
