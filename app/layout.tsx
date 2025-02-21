@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/logos/emoviral-logo-s.webp",
-        width: 800,  // Adjust based on your actual image dimensions
-        height: 600, // Adjust based on your actual image dimensions
+        width: 800,
+        height: 600,
         alt: "Emoviral Logo",
       },
     ],
@@ -64,11 +64,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body 
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ overflowX: 'hidden' }}
-      >
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
         <Header />
         {children}
         <BackToTop />

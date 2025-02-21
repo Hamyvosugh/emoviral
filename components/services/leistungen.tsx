@@ -1,42 +1,48 @@
 import React from 'react';
-import { Code2, Globe, Lightbulb, LineChart, MessageSquareShare, Search, Zap } from 'lucide-react';
+import { Code2, Globe, Lightbulb, LineChart, Link, MessageSquareShare, Search, Zap } from 'lucide-react';
 
 const services = [
   {
     title: 'Automatisierungslösungen',
     description: 'Optimieren Sie Ihre Geschäftsprozesse mit modernster Automatisierungstechnologie',
     icon: Zap,
-    gradient: 'from-primary-500 to-primary-700'
+    gradient: 'from-primary-500 to-primary-700',
+    href: '/Automation' // Placeholder link
   },
   {
     title: 'Web & App Entwicklung',
     description: 'Full-Stack-Entwicklungsdienste von E-Commerce bis hin zu individuellen Anwendungen',
     icon: Code2,
-    gradient: 'from-secondary-500 to-secondary-700'
+    gradient: 'from-secondary-500 to-secondary-700',
+    href: '/webdevelopment'
   },
   {
     title: 'Digitales Marketing',
     description: 'Umfassende digitale Marketingstrategien für Ihre Online-Präsenz',
     icon: LineChart,
-    gradient: 'from-success-500 to-success-700'
+    gradient: 'from-success-500 to-success-700',
+    href: '/digitalmarketing'
   },
   {
     title: 'SEO-Optimierung',
     description: 'Verbessern Sie Ihr Suchmaschinenranking und steigern Sie den organischen Traffic',
     icon: Search,
-    gradient: 'from-warning-500 to-warning-700'
+    gradient: 'from-warning-500 to-warning-700',
+    href: '#'
   },
   {
     title: 'Social Media Marketing',
     description: 'Erreichen Sie Ihre Zielgruppe und stärken Sie Ihre Markenbekanntheit in sozialen Medien',
     icon: MessageSquareShare,
-    gradient: 'from-error-500 to-error-700'
+    gradient: 'from-error-500 to-error-700',
+    href: '#'
   },
   {
     title: 'KI-Integration',
     description: 'Nutzen Sie KI-Technologien zur Transformation Ihrer Geschäftsprozesse',
     icon: Lightbulb,
-    gradient: 'from-primary-700 to-secondary-700'
+    gradient: 'from-primary-700 to-secondary-700',
+    href: '/ki'
   }
 ];
 
@@ -55,9 +61,10 @@ const ServicesGrid = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <a
+              href={service.href}
               key={index}
-              className="group relative p-8 rounded-2xl bg-gray-900/50 border border-gray-800 hover:border-gray-700 transition-all duration-300 animate-fade-in"
+              className="group relative p-8 rounded-2xl bg-gray-900/50 border border-gray-800 hover:border-gray-700 transition-all duration-300 animate-fade-in cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
@@ -77,7 +84,7 @@ const ServicesGrid = () => {
               </div>
               
               <div className="absolute bottom-8 left-8 right-8 h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
+            </a>
           ))}
         </div>
       </div>

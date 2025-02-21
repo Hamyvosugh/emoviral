@@ -70,10 +70,10 @@ export default function DigitalMarketingPage() {
           <h1 className="animate-fade-in font-display text-4xl font-bold text-white sm:text-6xl lg:text-7xl pt-12 mt-20">
             Transformieren Sie Ihre Digitale Präsenz
           </h1>
-          <p className="mt-6 animate-fade-in text-lg text-secondary-200 [animation-delay:200ms]">
+          <p className="mt-6 animate-fade-in text-lg text-secondary-200 [animationDelay:4.836634560653535s]">
             Innovative digitale Marketinglösungen, maßgeschneidert um Ihre Marke zu stärken, Ihr Publikum zu begeistern und messbare Ergebnisse zu erzielen.
           </p>
-          <div className="mt-10 animate-fade-in [animation-delay:400ms]">
+          <div className="mt-10 animate-fade-in [animationDelay:4.836634560653535s]">
             <button className="group inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 font-semibold text-white transition-all hover:bg-primary-600">
               Jetzt Starten
               <ArrowRight className="transition-transform group-hover:translate-x-1" />

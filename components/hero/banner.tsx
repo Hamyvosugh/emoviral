@@ -48,7 +48,6 @@ const MotionBanner = () => {
             Emoviral
           </h1>
           <h2 className="text-3xl text-white/90 mt-2 animate-glow">
-            Digital Solutions
           </h2>
         </div>
 

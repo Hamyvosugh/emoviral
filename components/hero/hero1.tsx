@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import Slider from './slider';
 import MotionBanner from './banner'
 
 interface StatType {

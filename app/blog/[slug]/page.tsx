@@ -81,14 +81,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="animate-fade-in mb-12">
           {post.coverImage && (
             <div className="relative h-96 w-full rounded-2xl overflow-hidden mb-8 mt-14">
-              <Image
-                src={post.coverImage}
-                alt={post.title}
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
+  <div className="absolute inset-0 overflow-auto">
+    <div className="relative h-[200%]"> {/* Adjust height as needed */}
+      <Image
+        src={post.coverImage}
+        alt={post.title}
+        fill
+        className="object-cover sticky top-0"
+        priority
+      />
+    </div>
+  </div>
+</div>
           )}
           
           {/* Title and Meta Section */}

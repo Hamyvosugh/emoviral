@@ -1,9 +1,9 @@
-import { Suspense } from 'react';
-import { getAllPosts, getFeaturedPosts, getAllTags } from '../lib/blog';
-import { Play, Info } from 'lucide-react';
-import Link from 'next/link';
+import { Info, Play } from 'lucide-react';
 import Image from 'next/image';
-import BlogList from  '../components/blog/BlogList';
+import Link from 'next/link';
+import { Suspense } from 'react';
+import BlogList from '../components/blog/BlogList';
+import { getAllPosts, getAllTags, getFeaturedPosts } from '../lib/blog';
 
 export default async function BlogPage() {
   const featuredPosts = await getFeaturedPosts();
@@ -55,7 +55,7 @@ export default async function BlogPage() {
     <Suspense fallback={<div className="h-48 md:h-64 bg-black/50" />}>
       <BlogList 
         posts={featuredPosts} 
-        title="Featured Posts"
+        title="Empfohlene Beiträge"
       />
     </Suspense>
 

@@ -27,6 +27,11 @@ const config: Config = {
       },
     },
     extend: {
+      utilities: {
+        '.overflow-x-hidden': {
+          'overflow-x': 'hidden',
+        },
+      },
       colors: {
         primary: {
           50: '#f0f9ff',

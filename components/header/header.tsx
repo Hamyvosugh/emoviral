@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Menu, X, Search, Code, Rocket, BarChart, Brain, ChevronDown } from 'lucide-react';
+import { Menu, X, Search, Code, Rocket, BarChart, Brain, ChevronDown, Share2 } from 'lucide-react';
 import Link from 'next/link';
 import SearchOverlay from '@/components/header/SearchOverlay';
 
@@ -16,17 +16,18 @@ interface ServiceItem extends NavItem {
 }
 
 const serviceItems: ServiceItem[] = [
-  { 
-    label: 'Automatisierung', 
-    href: '/Automation',
-    icon: <Rocket className="w-6 h-6 text-primary-400" />,
-    description: 'Prozessoptimierung & Workflow-Automation'
-  },
+
   { 
     label: 'Webentwicklung', 
     href: '/webdevelopment',
     icon: <Code className="w-6 h-6 text-primary-400" />,
     description: 'Modern & responsive Websites'
+  },
+  { 
+    label: 'Automatisierung', 
+    href: '/Automation',
+    icon: <Rocket className="w-6 h-6 text-primary-400" />,
+    description: 'Workflow-Automation'
   },
   { 
     label: 'Digital Marketing', 
@@ -39,6 +40,18 @@ const serviceItems: ServiceItem[] = [
     href: '/ki',
     icon: <Brain className="w-6 h-6 text-primary-400" />,
     description: 'KI-gestützte Lösungen'
+  },
+  { 
+    label: 'Professionelle SEO', 
+    href: '/seo',
+    icon: <Search className="w-6 h-6 text-primary-400" />,
+    description: 'SEO-Strategien für Sichtbarkeit '
+  },
+  { 
+    label: 'Social Media Marketing', 
+    href: '/SocialMediaMarketing',
+    icon: <Share2 className="w-6 h-6 text-primary-400" />,
+    description: 'Traffic + Lead + Conversion '
   },
 ];
 

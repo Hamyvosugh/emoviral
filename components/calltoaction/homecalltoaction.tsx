@@ -9,7 +9,7 @@ const CtaSection = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/home/marketing-dashboard.JPG" 
+          src="/images/blog/base/emoviral.webp" 
           alt="Hintergrund" 
           className="w-full h-full object-cover"
         />
@@ -46,7 +46,7 @@ const CtaSection = () => {
   }}
             className="inline-flex items-center px-6 py-3 bg-secondary-500 hover:bg-secondary-600 
                      text-white rounded-full transition-all duration-300 group-hover:scale-105
-                     shadow-lg hover:shadow-secondary-500/25"
+                     shadow-lg hover:shadow-secondary-500/25 "
           >
             Kontaktformular
             <ArrowRight className="ml-2 w-5 h-5 animate-slide-in" />
@@ -54,12 +54,12 @@ const CtaSection = () => {
         </div>
 
         {/* Right Side Contact Icons */}
-        <div className="w-1/4 flex flex-col items-center space-y-4 sm:items-end absolute inset-x-0 bottom-0 mx-auto sm:relative sm:mx-0">
+        <div className="w-1/4 flex flex-col items-center space-y-4 sm:items-end absolute inset-x-0 bottom-0  mx-auto  sm:relative sm:mx-0">
         <a
             href={`tel:${phoneNumber}`}
             className="flex items-center px-4 py-2 bg-white/10 hover:bg-white/20 
                      rounded-full backdrop-blur-sm transition-all duration-300
-                     text-white hover:translate-x-2"
+                     text-white hover:translate-x-2 "
           >
             <Phone className="w-5 h-5 mr-2" />
             <span className="font-medium">Anrufen</span>
@@ -73,12 +73,13 @@ const CtaSection = () => {
                      rounded-full backdrop-blur-sm transition-all duration-300
                      text-white hover:translate-x-2"
           >
-            <MessageCircle className="w-5 h-5 mr-2" />
-            <span className="font-medium">WhatsApp</span>
+            <MessageCircle className="w-5 h-5 mr-2 " />
+            <span className="font-medium ">WhatsApp</span>
           </a>
         </div>
       </div>
     </section>
+    
   );
 };
 
