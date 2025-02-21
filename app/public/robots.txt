@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Allow all crawlers
+Sitemap: https://emoviral.com/sitemap.xml
+
+# Block specific paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Block specific bots (optional)
+User-agent: BadBot
+Disallow: /
+
+# Crawl delay (optional)
+Crawl-delay: 10
